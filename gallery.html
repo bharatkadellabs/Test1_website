@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>jQuery lightGallery demo</title>
+    <link href="/style.css" rel="stylesheet">
+    <link href="./css/lightgallery.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/galleryStyle.css" />
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.1.0/mdb.min.css" rel="stylesheet" />
+    <!-- google Font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Nunito', sans-serif;
+        }
+
+        @media only screen and (max-width: 480px) {}
+
+        .gallery-item {
+            width: 200px;
+            padding: 5px;
+        }
+
+        h1:after {
+            content: '';
+            display: block;
+            position: relative;
+            width: 20%;
+            border: 2px solid #0E2D7B;
+            margin-top: 12px !important;
+           
+            margin: 0 auto;
+           
+        }
+        
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark pt-0">
+        <div class="container-fluid">
+            <a class="navbar-brand p-0 mt-0 mb-0  "><img src="/kadelLogo.png" height="50px" class="pt-2"></a>
+            <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
+                data-mdb-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="about_us.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+    <h1 style="color: #69960C; ">Click the picture to see.</h1>
+
+    <div class="container" id="lightgallery">
+        <a href="./img/main.jpg">
+            <img src="./img/n1.jpg" />
+        </a>
+        <a href="./img/train.jpg" class="vertical">
+            <img src="./img/n2.jpg" />
+        </a>
+        <a href="./img/951550.jpg" class="horizontal">
+            <img src="./img/n3.jpg" />
+        </a>
+        <a href="./img/b4.jpg">
+            <img src="./img/b4.jpg" />
+        </a>
+
+        <a href="./img/1282014.jpg" class="horizontal">
+            <img src="./img/1282014.jpg" />
+        </a>
+
+        <a href="./img/b6.jpg" class="big">
+            <img src="./img/n4.jpg" />
+        </a>
+        <a href="./img/b2.jpg">
+            <img src="./img/n4.jpg" />
+        </a>
+
+        <a href="./img/s3.jpg" class="vertical">
+            <img src="./img/b1.jpg" />
+        </a>
+
+        <a href="./img/headphone.jpg">
+            <img src="./img/headphone.jpg" />
+        </a>
+
+        <a href="./img/w2.jpeg" class="horizontal">
+            <img src="./img/n5.jpg" />
+        </a>
+
+        <a href="./img/s1.jpg">
+            <img src="./img/n6.jpg" />
+        </a>
+
+        <a href="./img/computer.jpg" class="big">
+            <img src="./img/computer.jpg" />
+        </a>
+
+        <a href="./img/computer.jpg">
+            <img src="./img/b1.jpg" />
+        </a>
+
+        <a href="./img/b5.jpg" class="horizontal">
+            <img src="./img/n6.jpg" />
+        </a>
+
+        <a href="./img/w1.jpg">
+            <img src="./img/w1.jpg" />
+        </a>
+
+        <a href="./img/b3.jpg" class="big">
+            <img src="./img/n7.jpg" />
+        </a>
+
+        <a href="./img/.jpg">
+            <img src="./img/b4.jpg" />
+        </a>
+
+        <a href="./img/road.jpg" class="vertical">
+            <img src="./img/b4.jpg" />
+        </a>
+        <a href="./img/s4.jpg" class="big">
+            <img src="./img/s4.jpg" />
+        </a>
+        <a href="./img/tree.jpg" class="vertical">
+            <img src="./img/tree.jpg" />
+        </a>
+        <a href="./img/s2.jpg">
+            <img src="./img/s2.jpg" />
+        </a>
+        <a href="./img/b3.jpg">
+            <img src="./img/b3.jpg" />
+        </a>
+    </div>
+    <footer class="text-center text-white" style="background-color: #0E2D7B;">
+        <!-- Grid container -->
+        <div class="container p-4">
+          <!-- Section: Images -->
+          <section class="">
+            <div class="row">
+              <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+                <div
+                  class="bg-image hover-overlay ripple shadow-1-strong rounded"
+                  data-ripple-color="light"
+                >
+                  <img
+                    src="https://mdbcdn.b-cdn.net/img/new/fluid/city/113.webp"
+                    class="w-100"
+                  />
+                  <a href="#!">
+                    <div
+                      class="mask"
+                      style="background-color: rgba(251, 251, 251, 0.2);"
+                    ></div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+                <div
+                  class="bg-image hover-overlay ripple shadow-1-strong rounded"
+                  data-ripple-color="light"
+                >
+                  <img
+                    src="https://mdbcdn.b-cdn.net/img/new/fluid/city/111.webp"
+                    class="w-100"
+                  />
+                  <a href="#!">
+                    <div
+                      class="mask"
+                      style="background-color: rgba(251, 251, 251, 0.2);"
+                    ></div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+                <div
+                  class="bg-image hover-overlay ripple shadow-1-strong rounded"
+                  data-ripple-color="light"
+                >
+                  <img
+                    src="https://mdbcdn.b-cdn.net/img/new/fluid/city/112.webp"
+                    class="w-100"
+                  />
+                  <a href="#!">
+                    <div
+                      class="mask"
+                      style="background-color: rgba(251, 251, 251, 0.2);"
+                    ></div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+                <div
+                  class="bg-image hover-overlay ripple shadow-1-strong rounded"
+                  data-ripple-color="light"
+                >
+                  <img
+                    src="https://mdbcdn.b-cdn.net/img/new/fluid/city/114.webp"
+                    class="w-100"
+                  />
+                  <a href="#!">
+                    <div
+                      class="mask"
+                      style="background-color: rgba(251, 251, 251, 0.2);"
+                    ></div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+                <div
+                  class="bg-image hover-overlay ripple shadow-1-strong rounded"
+                  data-ripple-color="light"
+                >
+                  <img
+                    src="https://mdbcdn.b-cdn.net/img/new/fluid/city/115.webp"
+                    class="w-100"
+                  />
+                  <a href="#!">
+                    <div
+                      class="mask"
+                      style="background-color: rgba(251, 251, 251, 0.2);"
+                    ></div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+                <div
+                  class="bg-image hover-overlay ripple shadow-1-strong rounded"
+                  data-ripple-color="light"
+                >
+                  <img
+                    src="https://mdbcdn.b-cdn.net/img/new/fluid/city/116.webp"
+                    class="w-100"
+                  />
+                  <a href="#!">
+                    <div
+                      class="mask"
+                      style="background-color: rgba(251, 251, 251, 0.2);"
+                    ></div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- Section: Images -->
+        </div>
+        <!-- Grid container -->
+      
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        Design By-
+          <a class="text-white" >Bharat Kumar Mlai</a>
+        </div>
+        <!-- Copyright -->
+      </footer>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.1.0/mdb.min.js"></script>
+    <script src="./js/lightgallery.js"></script>
+    <script>
+        var imagPop = document.getElementById("lightgallery");
+        lightGallery(imagPop);
+    </script>
+</body>
+
+</html>
