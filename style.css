@@ -98,34 +98,33 @@ h1:after {
     width: 260px !important;
 }
 
-/* Height for devices larger than 576px */
-@media (min-width: 992px) {
-  #introCarousel {
-    margin-top: -58.59px;
-  }
 
-}
+
 
 /* For Mobile display */
-@media only screen and (min-width: 480px) {
+/* @media only screen and (min-width: 480px) {
   #nav{
     position: absolute !important;
     top: 0 !important;
   }
+  .card{
+    width: 260px !important;
+  }
+   */
  
-}
 
 
-@media only screen and (max-width: 768px) {
+
+/* @media only screen and (max-width: 768px) { */
     /* For mobile phones: */
-    .service_sec{
+    /* .service_sec{
         padding-top: 100px !important;
     }
-    .card{
-        width: 99%  !important;
+    /* .card{
+        width: 31%  !important;
        
-    }
-    .big-shape-2{
+    } */
+    /* .big-shape-2{
    
         display: none;
       
@@ -134,7 +133,7 @@ h1:after {
         margin: 0%;
         
       }
-    }
+    }  */
 
 /* for light box  */
 .header .lead {
@@ -198,6 +197,81 @@ h1:after {
   }
 
 
-.card{
-  width: 260px !important;
+/* For Desktop View */
+@media screen and (max-width: 980px) {
+  .navbar-nav{
+    background-color: rgba(0,0,0, 0.5);
+    height: 100vh;
+    width: 45% ;
+    padding: 20px !important;
+  }
 }
+ 
+/* For Tablet View */
+@media screen and (min-device-width: 768px)
+and (max-device-width: 1024px) {
+  .big-shape-2{
+
+    display: none;
+  
+  }
+  
+  
+}
+ 
+/* For Mobile Portrait View */
+@media screen and (max-device-width: 480px)
+and (orientation: portrait) {
+  #nav{
+    position: absolute !important;
+    top: 0 !important;
+  }
+  .card{
+    width: 99% !important;
+  }
+  .service_sec{
+    padding-top: 100px !important;
+  }
+.big-shape-2{
+
+    display: none;
+  
+  }
+  .card-sec{
+    margin: 0%;
+    
+  }
+  
+}
+ 
+/* For Mobile Landscape View */
+@media screen and (max-device-width: 640px)
+and (orientation: landscape) {
+  .gfg-div {
+    width: 400px;
+    height: 200px;
+    background-color: cyan;
+    color: black;
+  }
+  .big-shape-2{
+
+    display: none;
+  
+  }
+}
+ 
+/* For Mobile Phones Portrait or Landscape View */
+@media screen and (max-device-width: 640px) {
+  .gfg-div {
+    width: 400px;
+    height: 200px;
+    background-color: chartreuse;
+    color: black;
+  }
+  .big-shape-2{
+
+    display: none;
+  
+  }
+}
+ 
