@@ -115,7 +115,7 @@
             if (id == "name") {
 
                 
-                var string = /^[a-zA-Z]+$/;
+                var string = /^[a-zA-Z\s]*$/;
                 if (name == "") {
                     document.getElementById("name").style.border = "1px solid red";
                     error.innerHTML = "<span style='color: red; font-size: 12px;'>" + "*Name cannot be blank</span>"
