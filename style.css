@@ -79,7 +79,7 @@ h1:after {
 
  .big-shape-2{
     top: 50px;
-    right: -100px !important;
+    right: 0px !important;
     height: 648px;
     width: 745px;
     background-image: url("big-shape-2.png"); 
@@ -164,8 +164,8 @@ h1:after {
 }
 .big-shape-1{
   
-  top: 500px;
-  left: 79px !important;
+  top: 100px;
+    left: 90px !important;
   height: 64px;
   width: 64px;
   background-image: url("icon2.png"); 
